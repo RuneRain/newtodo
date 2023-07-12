@@ -1,7 +1,7 @@
 :root {
 	--primary: #EA40A4;
-	--business: #3A82EE;
-	--personal: var(--primary);
+	--today: #3A82EE;
+	--study: var(--primary);
 	--light: #EEE;
 	--grey: #888;
 	--grey2: #ccc;
@@ -10,8 +10,8 @@
 
 	--shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 
-	--business-glow: 0px 0px 4px rgba(58, 130, 238, 0.75);
-	--personal-glow: 0px 0px 4px rgba(234, 64, 164, 0.75);
+	--today-glow: 0px 0px 4px rgba(58, 130, 238, 0.75);
+	--study-glow: 0px 0px 4px rgba(234, 64, 164, 0.75);
 }
 
 * {
@@ -120,13 +120,13 @@ input[type="checkbox"] {
 	width: 20px;
 	height: 20px;
 	border-radius: 50%;
-	border: 2px solid var(--business);
-	box-shadow: var(--business-glow);
+	border: 2px solid var(--today);
+	box-shadow: var(--today-glow);
 }
 
-.bubble.personal {
-	border-color: var(--personal);
-	box-shadow: var(--personal-glow);
+.bubble.study {
+	border-color: var(--study);
+	box-shadow: var(--study-glow);
 }
 
 .bubble::after {
@@ -135,15 +135,15 @@ input[type="checkbox"] {
 	opacity: 0;
 	width: 0px;
 	height: 0px;
-	background-color: var(--business);
-	box-shadow: var(--business-glow);
+	background-color: var(--today);
+	box-shadow: var(--today-glow);
 	border-radius: 50%;
 	transition: 0.2s ease-in-out;
 }
 
-.bubble.personal::after {
-	background-color: var(--personal);
-	box-shadow: var(--personal-glow);
+.bubble.study::after {
+	background-color: var(--study);
+	box-shadow: var(--study-glow);
 }
 
 input:checked ~ .bubble::after {
@@ -166,7 +166,7 @@ input:checked ~ .bubble::after {
 	color: #FFF;
 	background-color: var(--primary);
 	border-radius: 0.5rem;
-	box-shadow: var(--personal-glow);
+	box-shadow: var(--study-glow);
 	cursor: pointer;
 	transition: 0.2s ease-in-out;
 }
