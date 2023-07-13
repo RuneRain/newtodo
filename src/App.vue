@@ -59,14 +59,14 @@ onMounted(()=>{
         v-model="input_content">
         <div class="options">
           <label>
-            <input type="radio" name="category" id="category1" value="today" v-model="input_category">
-            <span class="bubble today"></span>
-            <div>today</div>
+            <input type="radio" name="category" id="category1" value="business" v-model="input_category">
+            <span class="bubble business"></span>
+            <div>business</div>
           </label>
           <label>
-            <input type="radio" name="category" id="category2" value="study"  v-model="input_category">
-            <span class="bubble study"></span>
-            <div>study</div>
+            <input type="radio" name="category" id="category2" value="personal"  v-model="input_category">
+            <span class="bubble personal"></span>
+            <div>personal</div>
           </label>
         </div>
         <input type="submit" value="Add TODO">
